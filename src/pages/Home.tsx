@@ -84,6 +84,19 @@ const Home = () => {
       {/* Why Choose Us */}
       <section className="section-padding bg-brand-50">
         <div className="max-w-7xl mx-auto">
+          {/* Logo Cloud */}
+          <div className="mb-24">
+            <p className="text-center text-brand-400 font-medium uppercase tracking-widest text-sm mb-12">Trusted by 200+ forward-thinking teams</p>
+            <div className="flex flex-wrap justify-center gap-x-16 gap-y-8 opacity-40 grayscale group">
+              {['TechFlow', 'NexGen', 'Lumina', 'Velocity', 'Apex'].map((name) => (
+                <div key={name} className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+                  <div className="w-8 h-8 rounded-lg bg-brand-900 flex items-center justify-center text-white font-bold">{name[0]}</div>
+                  <span className="text-xl font-bold text-brand-950 font-display">{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="heading-lg mb-6">Why Modern Businesses Choose Groviads</h2>
             <p className="text-brand-600 text-lg">
